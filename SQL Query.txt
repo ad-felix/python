@@ -1,0 +1,17 @@
+// Create Table
+create TABLE users(
+	user_id INTEGER PRIMARY KEY AUTO_INCREMENT, 
+	name VARCHAR(255) NOT NULL, 
+	email VARCHAR(255) NOT NULL UNIQUE, 
+	password VARCHAR(255) NOT NULL)
+
+// Insert into Table
+INSERT INTO users(user_id, name, email, password) VALUES (NULL, 'Akash', 'abc@gmail.com', '1234')
+
+// Update into Table
+UPDATE users set name="Pappu" where name="hekko"
+
+// Delete from tables
+DELETE FROM users where name='Pappu'
+
+SELECT * FROM users WHERE name='Akash'
